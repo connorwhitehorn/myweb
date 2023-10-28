@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Connor's HTML Page is l33t!!!</title>
+        <style>
+            body {
+                background-color: darkolivegreen;
+            }
+            p {
+                color: white;
+            }
+            #div1 {
+                background-color: red;
+                height: 40px;
+                width: 40px;
+            }
+            #div2 {
+                background-color: blue;
+                height: 40px;
+                width: 40px;
+            }
+            #div3 {
+                background-image: url('https://www.rd.com/wp-content/uploads/2019/09/GettyImages-621924830-scaled.jpg?w=120');
+                width: 120px;
+                height: 86px;
+            }
+            #parent {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+        <script>
+            setInterval( function() {
+                const red = parseInt(Math.random() * 255);
+                const green = parseInt(Math.random() * 255);
+                const blue = parseInt(Math.random() * 255);
+                if (Math.random() > 0.95) {
+                    document.getElementsByTagName('body')[0].style.backgroundImage = `url('https://www.rd.com/wp-content/uploads/2019/09/GettyImages-621924830-scaled.jpg?w=120')`;
+                } else {
+                    document.getElementsByTagName('body')[0].style.backgroundImage = null;
+                    document.getElementsByTagName('body')[0].style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+                }
+                // document.getElementById("div3").style.width = width;
+                // document.getElementById("div3").style.height = height;
+            }, 100);
+        </script>
+    </head>
+    <body>
+        <p>Hello, my name is Connor, and is NOT a l33t h@ck0r!</p>
+        <div id="parent">
+            <div id="div1">
+
+            </div>
+            <div id="div2">
+
+            </div>
+            <div id="div3">
+
+            </div>
+        </div>
+    </body>
+</html>
